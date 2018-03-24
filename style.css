@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    width: 1280px;
+    padding-bottom: 1000px;
+}
+.col1 {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 70%;
+}
+
+.col2 {
+    width: 69%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 32%;
+    right: 0;
+}
+
+ .capital div *, .fixed-costs div *, .tax div *, .variable-costs section div.projection-wrapper div * {
+    display: inline;
+}
+
+.capital div input, .fixed-costs div input, .tax div input, .variable-costs div.projection-wrapper div input {
+    float: right;
+}
+
+form div, h2, p, .submit {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+}
+
+input.currency {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px'><text x='2' y='16' fill='gray' font-size='12'>$</text></svg>");
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+input.percent {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px'><text x='2' y='16' fill='gray' font-size='12'>%</text></svg>");
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+p {
+    size: 16px;
+    padding-bottom: 3px;
+}
+
+.projection-wrapper {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: greenyellow;
+}
+input[type=submit]:active {
+    background-color: darkgray;
+}
+input[type=submit] {
+    background-color: lightgray;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table {
+    width: 800px;
+    border: 1px solid lightgray;
+
+}
+td, th {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
