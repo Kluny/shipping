@@ -1,25 +1,20 @@
 .container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 650px;
+/*    position: absolute; */
+    width: 1270px;
+    min-width: 1270px;
+    overflow: scroll;
 }
 .col1 {
-    width: 30%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 70%;
+    width: 384px;
+    float: left;
 }
 
 .col2 {
-    width: 69%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 32%;
-    right: 0;
+    width: 870px;
+    float: right;
+    padding-left: 10px;
 }
+
 
  .capital div *, .fixed-costs div *, .tax div *, .variable-costs section div.projection-wrapper div * {
     display: inline;
@@ -27,6 +22,11 @@
 
 .capital div input, .fixed-costs div input, .tax div input, .variable-costs div.projection-wrapper div input {
     float: right;
+}
+
+footer {
+    clear: both;
+    margin-top: 20px;
 }
 
 form div, h2, p, .submit {

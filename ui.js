@@ -110,11 +110,11 @@ function summary(data) {
     var paragraphs = [];
     paragraphs.push(
         "Total cost: fixed + stock",
-        "$" + getFixedCost(data) + " + $" + getStockCost(data) + " = $" + getTotalCost(data) + " of $" + getCapital(data),
+        nf(getFixedCost(data)) + " + " + nf(getStockCost(data)) + " = " + nf(getTotalCost(data)) + " of " + nf(getCapital(data)),
         "Net: gross = ( stock + fixed ) - tax - insurance",
-        "$" + getGross(data) + " - ($" + getStockCost(data) + " + $" + getFixedCost(data) +") - $" + getTax(data) + " - $" + getInsurance(data),
-        "I want a 1/3 return on my investment, so $" + getCapital(data) + " / 3 = $" + getRequiredNet(data),
-        "Net: $" + getProfit(data) + " of $" + getRequiredNet(data)
+        "" + nf(getGross(data))+ " - (" + nf(getStockCost(data)) + " + " + nf(getFixedCost(data)) +") - " + nf(getTax(data)) + " - " + nf(getInsurance(data)),
+        "I want a 1/3 return on my investment, so " + nf(getCapital(data)) + " / 3 = " + nf(getRequiredNet(data)),
+        "Net: " + nf(getProfit(data)) + " of " + nf(getRequiredNet(data))
     );
 
     paragraphs.forEach(function(para) {
@@ -125,4 +125,9 @@ function summary(data) {
 
     return summary;
 
+}
+
+function nf(n){
+    n = new Intl.NumberFormat().format(n);
+    return "$" + n;
 }
