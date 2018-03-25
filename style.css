@@ -46,6 +46,13 @@ input.currency {
     padding-left: 15px;
     padding-right: 5px;
 }
+input.number {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px'><text x='2' y='16' fill='gray' font-size='12'>#</text></svg>");
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
 input.percent {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px'><text x='2' y='16' fill='gray' font-size='12'>%</text></svg>");
     padding-bottom: 5px;
