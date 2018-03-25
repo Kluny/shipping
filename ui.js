@@ -35,8 +35,6 @@ function assign_defaults() {
 }
 
 function expenseTable(data) {
-    console.log("here!");
-    console.log(data);
     //create and return a table of expenses
     var table = document.createElement('table');
     var tbody = document.createElement('tbody');

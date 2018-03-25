@@ -1,7 +1,7 @@
 /**
  * Created by shannon on 2018-03-21.
  */
-debug = false;
+debug = true;
 
 
 /**
@@ -170,6 +170,7 @@ function listFixedCosts(data) {
  */
 function parse(data) {
     if(true === debug) {
+        data = testData();
         test(data);
     }
 
@@ -204,6 +205,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }, false);
 }, false);
+
+function testData(){
+    return {
+        airfare: "1400",
+        cash: "10000",
+        everything_else: "1000",
+        insurance_rate: "0.65",
+        item_count: "200",
+        loan1: "20000",
+        loan_rate1: "4.5",
+        markup: "100",
+        price_point: "100",
+        shipping_rate: "5800",
+        tax_rate: "9"
+    }
+}
 
 function test(data) {
     answers = {
