@@ -1,7 +1,7 @@
 /**
  * Created by shannon on 2018-03-21.
  */
-debug = true;
+debug = false;
 
 
 /**
