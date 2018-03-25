@@ -26,6 +26,9 @@
     <?php require_once 'results.php'; ?>
 </div><!-- col2 -->
 </div><!-- container -->
+<footer>
+    More info at <a href="https://github.com/Kluny/shipping">Github.</a>
+</footer>
 </body>
 
 </html>

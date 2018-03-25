@@ -1,7 +1,7 @@
 .container {
     position: relative;
-    width: 1280px;
-    padding-bottom: 1000px;
+    width: 100%;
+    padding-bottom: 650px;
 }
 .col1 {
     width: 30%;
